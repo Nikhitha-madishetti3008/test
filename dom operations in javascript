@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>document object model</title>
+<script>
+function handlecreate()
+{
+var parent=document.getElementById("div1");
+var child=document.getElementById("p1");
+parent.removeChild(child);
+}
+
+function handleremove()
+{
+var parent=document.getElementById("div1");
+var child=document.getElementById("p");
+var text=document.createTextNode("in the javascript");
+child.appendChild(text);
+
+
+}
+
+</script>
+<body>
+
+
+<div id="div1">
+<p id="p1">welcome to dom operations in javascript</p>
+<p id="p2">basic operations like create and delete</p>
+</div>
+
+<input type="button" value="create" onclick="handlecreate()"/>
+<input type="button"  value="remove" onclick="handleremove()"/>
+
+</body>
+</html>
+
