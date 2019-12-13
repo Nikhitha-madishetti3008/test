@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>custom object creation</title>
+<script>
+function add(title)
+{
+this.title=title;
+this.add=add;
+this.displaysubjects=displaysubjects;
+}
+
+function add(adding)
+{
+this.add=add;
+}
+ function displaysubjects()
+ {
+ document.write(this.title+"<br/>");
+ document.write(this.displaysubjects+"<br/>"); 
+ }
+
+var cr=new cr("B-tech")
+cr.add("Third year first semenster syllabus")
+cr.displaysubjects();
+ 
+var cr1=new cr1()
+cr1.add("Third year second semester syllabus")
+cr1.displaysubjects();
+</script>
+<body></body>
+</html>
+
